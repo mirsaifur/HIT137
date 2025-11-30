@@ -1,4 +1,4 @@
-password = input("Enter your password:")
+password = input("Enter your password to check strength:")
 
 length = len(password)
 has_digit = any(char.isdigit() for char in password)
@@ -11,4 +11,4 @@ elif 6 <= length <= 10 and has_digit:
     print("Password Strength: Your password is Medium")
 
 elif length > 10 and has_digit and has_upper:
-    print("Password Strength: Voila, You have a strong Password")
+    print("Password Strength: Voila! You have a strong Password")
